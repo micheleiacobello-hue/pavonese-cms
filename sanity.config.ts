@@ -117,8 +117,11 @@ const siteSettings = defineType({
   type: 'document',
   fields: [
     defineField({ name: 'name', title: 'Nome societa\u0300', type: 'string' }),
+    defineField({ name: 'foundedYear', title: 'Anno di fondazione', type: 'string' }),
+    defineField({ name: 'about', title: 'Chi siamo (testo società)', type: 'text', rows: 6, description: 'Separa i paragrafi con una riga vuota.' }),
     defineField({ name: 'address', title: 'Indirizzo / Stadio', type: 'string' }),
     defineField({ name: 'phone', title: 'Telefono', type: 'string' }),
+    defineField({ name: 'officeHours', title: 'Orari segreteria', type: 'string', description: 'Es. Lun-Ven 17:00 — 19:30' }),
     defineField({ name: 'email', title: 'Email', type: 'string' }),
     defineField({ name: 'facebook', title: 'Facebook URL', type: 'url' }),
     defineField({ name: 'instagram', title: 'Instagram URL', type: 'url' }),
